@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esakki Saran | Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero" data-aos="fade-right">
+  <div class="hero-header">
+    <h1><span>Esakki Saran S</span></h1>
+  </div>
+  <div class="hero-content">
+    <p>Artificial Intelligence and Data Science</p>
+  </div>
+  <div class="button-container">
+    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p id="typing-text"></p>
+</section>
+
+<!-- Projects -->
+<section class="projects" data-aos="fade-left">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Fake Review Detection</h3>
+      <p>Classified fake reviews using NLP and machine learning.</p>
+      <p><strong>Tools:</strong> Python, Scikit-learn</p>
+    </div>
+    <div class="project-card">
+      <h3>Accident Detection using YOLOv5</h3>
+      <p>Real-time accident detection from video using object detection.</p>
+      <p><strong>Tools:</strong> YOLOv5, OpenCV</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python <span class="stars">★★★★☆</span></li>
+    <li>SQL <span class="stars">★★★★☆</span></li>
+    <li>Machine Learning <span class="stars">★★★★☆</span></li>
+    <li>Deep Learning <span class="stars">★★★☆☆</span></li>
+    <li>Power BI <span class="stars">★★★☆☆</span></li>
+    <li>TensorFlow <span class="stars">★★★☆☆</span></li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section class="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:esakkisaran390@gmail.com">esakkisaran390@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/saran0702" target="_blank">github.com/esakkisaran</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/esakki-saran-b42576306/" target="_blank">linkedin.com/in/esakki-saran-b42576306</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Esakki Saran</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: false });
+
+  // Typing effect
+  const text = "I’m a Data Science student passionate about AI and ML.";
+  let i = 0;
+  function typeEffect() {
+    if (i < text.length) {
+      document.getElementById("typing-text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeEffect, 50);
+    }
+  }
+  window.onload = typeEffect;
+</script>
+</body>
+</html>
